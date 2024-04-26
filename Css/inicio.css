@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+html{
+    width: 100%;
+    height: 100%;
+   
+
+}
+header{
+    background-color: #12CDD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+}
+header img {
+    height: 50px;
+}
+nav{
+    margin: 20px;
+}
+nav a{
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+nav .noso{
+    color: white;
+}
+nav .info{
+    color: black;
+    border: 1px solid white;
+    border-radius:30px ;
+}
+.baner{
+
+width: 100%;
+
+}
+.baner img{
+    width: 100%;
+    height: 150px;
+}
+.autos{
+    width: 100%;
+}
+.autos img{
+    width: 100%;
+    height: 200px;
+}
+ main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #12CDD4;
+    margin: 50px
+}
+.conteiner{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: silver; */
+    padding: 55px;
+}
+.dor{
+    display: flex;
+    
+}
+.bono{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #12CDD4;
+    border-radius: 30px;
+    position: relative;
+}
+
+.membresia{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #12CDD4;
+    position: relative;
+    border-radius: 30px;
+
+}
+.parqueadero{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #12CDD4;
+    position: relative;
+    border-radius: 30px;
+
+}
+.valet{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #12CDD4;
+    position: relative;
+    border-radius: 30px;
+
+}
+
+.conteiner .dor .bono{
+    top:-14px;
+      left: 10%;
+  }
+  .conteiner .dor .membresia{
+    top: -14px;
+    left: 29%;
+  }
+  .conteiner .dor .parqueadero{
+    top: 24px;
+    left:10% ;
+  }
+  .conteiner .dor .valet{
+    top: 24px;
+    left:29% ;
+  }
+  .logan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:20px ;
+    width: 100%;
+    height: 100px;
+    background-color: #E6E6E6;
+  }
+  .logan h2{
+    padding: 20px;
+  }
+  footer{
+    background-color: #12CDD4;
+    padding: 30px;
+  }
+  .fon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+position: relative;
+
+top: 10px;
+height: 160px;
+width: 100%;
+/* left: 458px; */
+/* width: 71.9%; */
+  }
+  .fon h2{
+    padding: 15px;
+  }
+  .es{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    padding: 20px;
+    margin: 0 ;
+   
+    width: 29%;
+  }
+  .es img{
+    align-items: center;
+    width: 30px;
+  }
+  .ubi{
+    padding: 5px;
+    height: 150px;
+    width: 30%;
+    border-right:  1px solid silver;
+  
+
+  }
+  .ubi .loca{
+    display: flex; 
+  }
+  .ubi .loca img{
+  width: 30px;
+  }
+  .cont{
+    padding: 5px;
+    height: 150px;
+    width: 30%;
+    border-right:  1px solid silver;
+  
+    
+  }
+  .cont img{
+    width: 15px;
+    margin: 5px;
+  }
+  .cont .cel1{
+    display: flex;
+  }
+  .cont .cel2{
+    display: flex;
+  }
+  .red{
+    padding: 7px;
+    height: 150px;
+    width: 30%;
+    
+   
+    
+  }
+  .red img{
+    width: 18px;
+    margin: 5px;
+    
+  }
+  .red .red1{
+    display: flex;
+  }
+  .red .red1 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .credi{
+    display: flex;
+justify-content: center;
+ align-items: center; 
+margin: 17px auto; 
+  }
+  .credi img{
+    height: 30px;
+  }
+  .cred{
+    display: flex;
+    justify-content: right;
+    
+    margin: 17px auto;
+
+  }
+  .cred p{
+    margin: 10px;
+  }
+  .cred a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+  }
+ 
+
+
+
+
