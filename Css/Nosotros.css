@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+html{
+ max-width:100%;
+ font-family: Arial, Helvetica, sans-serif;
+ width: 100%;
+height: auto;
+}
+header{
+    background-color: #12CDD4;
+    display: flex;
+  flex-wrap: wrap;
+  gap: 25px 15px;
+  justify-content: center;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+   height: auto;
+    padding: 10px;
+    margin: 0;
+
+    
+}
+.lor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+}
+header img {
+    height: 50px;
+}
+nav{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+nav a{
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    text-decoration: none;
+}
+nav .noso{
+    color: white;
+}
+nav .info{
+    color: black;
+    border: 1px solid white;
+    border-radius:30px ;
+}
+.tit{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tit h1{
+    padding: 20px;
+    text-align: center;
+    color: #12CDD4;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 300px;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.item {
+    background-color: #E6E6E6;
+    padding: 15px;
+    border-radius: 25px;
+  
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    overflow: auto;
+    aspect-ratio: 879/880;
+    transition: all 0.5s;
+}
+.contenedor .item .itema p:first-child{
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.itema img{
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+footer{
+    background-color: #12CDD4;
+    padding: 10px;
+    height: auto;
+    
+  }
+  .es{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    margin: 0 ;
+    width: 29%;
+  }
+  .es img{
+    align-items: center;
+    width: 30px;
+  }
+  .fon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .fon .cont{
+    padding: 15px;
+    width: 100%;
+    max-width: 330px;
+    height:auto;
+    overflow: 150px;
+    border-right:  1px  solid silver;
+  
+
+  }
+  .fon .cont p:first-child{
+    color: white;
+    text-align: center;
+    /* border-bottom: 1px solid silver; */
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    
+  }
+  .cont img {
+    width: 10%;
+    display: block;
+    margin:1px 15px;
+   
+  }
+  .red1{
+    display: flex;
+  }
+  .credi{
+    border-top: 1px solid black;
+    display: flex;
+justify-content: center;
+ align-items: center; 
+margin: 1px auto; 
+  }
+  .credi img{
+    height: 30px;
+  }
+  .cred{
+    display: flex;
+    justify-content: right; 
+    margin: 1px auto;
+
+  }
+  .cred p{
+    margin: 10px;
+  }
+  .cred a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+  }
