@@ -6,12 +6,14 @@
 }
 html{
  max-width:100%;
- font-family: Arial, Helvetica, sans-serif;
+text-align: center;
  width: 100%;
 height: auto;
+font-family: "PT Serif", serif
+;
 }
 header{
-    background-color: #12CDD4;
+    background-color: #3586ff;
     display: flex;
   flex-wrap: wrap;
   gap: 25px 15px;
@@ -27,13 +29,15 @@ header{
 }
 .lor{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding: 0%;
-  margin: 0%;
+  margin: 20px;
+  color: #fff;
 }
 header img {
-    height: 50px;
+    
+    width: 29%;
 }
 nav{
     display: flex; 
@@ -49,13 +53,23 @@ nav a{
     text-decoration: none;
 }
 nav .noso{
-    color: white;
+    color: #2a3b47;
+}
+nav .noso:hover{
+  color: #2a3b47;
 }
 nav .info{
-    color: black;
-    border: 1px solid white;
+    color: #fff;
+    /* border: 1px solid white; */
     border-radius:30px ;
 }
+nav .info:hover{
+  color: #2a3b47;
+}
+ body{
+
+  background-color: #333;
+} 
 
 .baner{
 
@@ -73,137 +87,208 @@ width: 100%;
     width: 100%;
     height: 200px;
 }
- main h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #12CDD4;
-    margin: 50px
+main h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3586ff;
+  margin: 50px
 }
 .tarjetas{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 30px;
-  justify-content: center;
-  padding: 15px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px 30px;
+justify-content: center;
+padding: 15px;
+height: auto;
 }
 .tarjetas .card{
-  background-color: #E6E6E6;
-  padding: 15px;
-  border-radius: 25px;
-  box-shadow: 5px 5px 10px black;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  overflow: auto;
-  aspect-ratio: 879/880;
-  transition: all 0.5s;
+background-color: #444;
+padding: 10px;
+border-radius: 10px;
+box-shadow:0  4px 8px rgba(0, 0, 0, 0.5);
+width: 100%;
+max-width: 300px;
+
+overflow: auto;
+aspect-ratio: 879/880;
+transition: all 1s;
 }
-.tarjetas :hover{
-  background-color: rgba(18, 205, 212, 0.76);
+.tarjetas .card:hover{
+background-color: rgba(0, 0, 0, 0.5);
 }
 .tarjetas .card .contenido p:first-child{
-  color: black;
-  text-align: center;
-  border-bottom: 1px solid black;
-  font-weight: bold;
-  font-size: 1.4rem;
+color:#3586ff;
+text-align: center;
+border-bottom: 1px solid #fff;
+font-weight: bold;
+font-size: 1.4rem;
+}
+.contenido p{
+  color: #fff;
+  text-align: justify;
+  padding: 5px;
 }
 .contenido img{
-  width: 35%;
-  display: block;
-  margin: auto;
+width: 25%;
+display: block;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 5px;
 }
-  .logan{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding:20px ;
-    width: 100%;
-    height: 100px;
-    background-color: #E6E6E6;
-  }
-  .logan h2{
-    padding: 20px;
-  }
-  footer{
-    background-color: #12CDD4;
-    padding: 10px;
-    height: auto;
-  }
-  .es{
-    display: flex;
-    justify-content: left;
-    align-content: center;
-    margin: 0 ;
-    width: 29%;
-  }
-  .es img{
-    align-items: center;
-    width: 30px;
-  }
-  .fon{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px 15px;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .fon .cont{
-    padding: 15px;
-    width: 100%;
-    max-width: 330px;
-    height:auto;
-    overflow: 150px;
-    border-right:  1px  solid silver;
-  
+.logan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:23px ;
+  width: 100%;
+  height: 300px;
+ color: #fff;
+  /* margin-bottom: 100px; */
+}
+.logan h2{
+  padding: 20px;
+  color: #3586ff;
+}
 
-  }
-  .fon .cont p:first-child{
-    color: white;
-    text-align: center;
-    /* border-bottom: 1px solid silver; */
-    font-weight: bold;
-    font-size: 1.2rem;
+footer{
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
 
-    
-  }
-  .cont img {
-    width: 10%;
-    display: block;
-    margin:1px 15px;
-   
-  }
-  .red1{
-    display: flex;
-  }
-  .credi{
-    border-top: 1px solid black;
-    display: flex;
+  padding: 20px 50px;
+display: flex;
 justify-content: center;
- align-items: center; 
-margin: 1px auto; 
-  }
-  .credi img{
-    height: 30px;
-  }
-  .cred{
-    display: flex;
-    justify-content: right; 
-    margin: 1px auto;
+align-items: center;
+flex-direction: column ;
+}
+footer .social_icon,
+footer .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li{
+  list-style: none;
+}
+footer .social_icon a,
+footer .menu li a{
+  font-size: 2em;
+  color: #fff;
+  margin:0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icon a :hover{
+  transform: translateY(-10px);
+}
+footer .menu li a{
+  font-size: 1.2em;
+  color: #fff;
+  margin:0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;  
+  opacity: 0.75;
+}
+footer .menu li a :hover{
+  opacity: 1;
+}
+footer p {
+  color:#fff ;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 
+}
+footer .wave{
+  position: absolute;
+  top: -99px;
+  left: 0;
+  width: 100%;
+  height: 99px;
+  background:  url(wave.png);
+  background-size:1000px  100px;
+}
+footer .wave#wave1{
+
+z-index: 1000;
+opacity:1 ;
+bottom: 0;
+animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+
+  z-index: 999;
+  opacity:0.5 ;
+  bottom: 10px;
+  animation: animateWave_2 4s linear infinite;
+}
+footer .wave#wave3{
+
+  z-index: 1000;
+  opacity:1 ;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+footer .wave#wave4{
+
+  z-index: 1000;
+  opacity:1 ;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+@keyframes animateWave{
+  0%{
+      background-position-x: 1000px;
   }
-  .cred p{
-    margin: 10px;
+  100%{
+      background-position-x: 0px;
   }
-  .cred a{
-    margin: 10px;
-    text-decoration: none;
-    color: white;
+}
+@keyframes animateWave_2{
+  0%{
+      background-position-x: 0px;
   }
- 
+  100%{
+      background-position-x: 1000px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+  .conm textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  body {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+  .conm textarea {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+}
+
 
 
 

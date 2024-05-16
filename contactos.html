@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link
       rel="shortcut icon"
-      href="icon/security_shield_protection_icon_153732.ico"
+      href="img/insignias.png"
       type="image/x-icon"
     />
     <title>Contactanos</title>
@@ -14,13 +17,13 @@
   <body>
     <header>
       <div class="lor">
-        <img src="img/escudo negro.png" alt="" />
+        <img src="img/insignias.png" alt="" />
         <h1>ParkSentry</h1>
       </div>
       <nav>
-        <a class="info" href="Inicio.html">Inicio</a>
-        <a class="info" href="Parki.html">Parqueaderos</a>
-        <a class="noso" href="Nosotros.html">Nosotros</a>
+        <a class="info"  href="Home.html">Inicio</a>
+        <a class="info"  href="reserva.html">Reserva</a>
+        <a class="noso"  href="Nosotros.html">Nosotros</a>
       </nav>
     </header>
     <main>
@@ -29,31 +32,32 @@
           <h1>Comunicate con Nosotros...</h1>
           <div class="conn">
             <p>Mantengamos el Contacto</p>
-          <p>Escribenos y te Responderemos tan Pronto como Sea Posible</p>
-          <img src="img/contactos.png" alt="" />
+          <p>Escribenos y te responderemos tan rronto como sea posible</p>
+          <img src="img/contactanos.png" alt="" />
           </div>
         </div>
         <div class="input">
          <div class="usuario">
-            <label for="Nombre">Nombre</label>
-            <input name="nombres" placeholder="Nombre Completo" />
+            <label  for="Nombre">Nombre</label>
+            <input id="Nombre" type="text" name="nombres" placeholder="Nombre Completo" />
          </div>
           
        <div class="usuario">
-        <label for="Teléfono">Teléfono</label>
-        <input name="telefono" placeholder="Ej.23337..." />
+        <label for="lTeléfono">Teléfono</label>
+        <input id="lTeléfono" type="tel" name="telefono" placeholder="Ej.23337..." />
        </div>
         
      <div class="usuario">
-        <label for="Correo">Correo</label>
-        <input
+        <label for="lCorreo">Correo</label>
+        <input id="lCorreo"
+        type="email"
           name="Correo"
           placeholder="Escribe tu Correo Ej.jmqer@gmail.com"
         />
      </div>
     
           <div class="cul">
-            <label for="categoria">categoria</label>
+            <label for="categoria">Categoria</label>
             <select name="categoria" id="categoria">
                 <option value="" disabled selected >Select....</option>
                 <option value="publi">Plubicidad en parqueaderos</option>
@@ -66,82 +70,45 @@
           <div class="conm">
             <label for="Comentarios"> Comentario </label>
     <br>
-        <textarea cols="70" rows="10" id="comentario" placeholder="ingrese comentario"
+        <textarea  cols="70" rows="10" id="Comentarios" placeholder="ingrese comentario"
             name="comentario"></textarea>
            
           </div>
          <div class="ent">
-            <input type="button" value="Envia Mensaje" id="enviar">
+            <input type="submit" value="Envia Mensaje">
          </div>
         </div>
       </div>
+<div class="map">
+<div class="texto">  <h1>Encuentranos en:</h1></div>
+<div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.047835667379!2d-75.56740232410806!3d6.257429193731146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e469f0fbdb929b5%3A0x3128c2c2fe3c7ba4!2sCEDES%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1715803091362!5m2!1ses!2sco"
+  width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
     </main>
     <footer>
-      <div class="es">
-        <img src="img/escudo azul.png" alt="" />
-        <h1>ParkSentry</h1>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
       </div>
-      <div class="fon">
-        <div class="loc">
-          <div class="cont">
-            <p>Ubicacion</p>
-            <div class="red1">
-              <img src="img/ubi.png" alt="" />
-              <p>
-                cra 14 No. 89 - 48 (Of. 202)<br />
-                bello - Colombia
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="loc">
-          <div class="cont">
-            <p>Contactos</p>
-            <div class="red1">
-              <img src="img/phone_handset_icon_125195.png" alt="" />
-              <p>TI(53)35467974</p>
-            </div>
-            <br />
-            <div class="red1">
-              <img src="img/phone_handset_icon_125195.png" alt="" />
-              <p>tl (+57) 3145701745</p>
-            </div>
-          </div>
-        </div>
-        <div class="loc">
-          <div class="cont">
-            <p>Redes</p>
-            <div class="red1">
-              <img src="img/facebook_logo_icon_143786.png" alt="" />
-              <a href="#">ParkSentry</a>
-            </div>
-            <div class="red1">
-              <img
-                src="img/instagram_internet_media_network_social_icon_123258.png"
-                alt=""
-              />
-              <a href="#">@ParkSentry</a>
-            </div>
-            <div class="red1">
-              <img
-                src="img/1485969399-twitersocialnetworkbrandlogo_78853.png    "
-                alt=""
-              />
-              <a href="#">@ParkSentry</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="credi">
-        <img src="img/alpha_c_circle_outline_icon_140018.png" alt="" />
-        <h3>2024 - Autorizacion</h3>
-      </div>
-      <div class="cred">
-        <p>Jose Ramos Gomez</p>
-        <a href="joseramosgomez71@gmail.com">joseramosgomez71@gmail.com</a>
-      </div>
-    </footer>
+      <ul class= "social_icon">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+      </ul> 
+      <ul class="menu">
+        <li><a href="#">home</a></li>
+        <li><a href="#">contactos</a></li>
+        <li><a href="#">Factura</a></li>
+        <li><a href="#">team</a></li>
+      </ul>
+      <p>©2020 ParkSentry | Todos los derechos reservados</p>
+  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</footer>
   </body>
 </html>

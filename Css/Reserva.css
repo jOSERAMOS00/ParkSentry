@@ -1,14 +1,14 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
- max-width:100%;
- font-family: Arial, Helvetica, sans-serif;
- width: 100%;
-height: auto;
+html {
+  max-width: 100%;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-family: "PT Serif", serif;
 }
 header {
   background-color: #3586ff;
@@ -21,7 +21,7 @@ header {
   width: 100%;
   height: auto;
   padding: 10px;
-  margin: 5;
+  margin: 0;
 }
 .lor {
   display: flex;
@@ -51,8 +51,7 @@ nav .noso {
   color: #333;
 }
 nav .noso:hover {
-  color: #d3d0d0;
-  transition: all 1s;
+  color: #fff;
 }
 nav .info {
   color: #fff;
@@ -60,74 +59,89 @@ nav .info {
   border-radius: 30px;
 }
 nav .info:hover {
-  color: #333;
-  transition: all 1s;
+  color: #2a3b47;
 }
+
 body {
   background-color: #333;
 }
-.tit{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.tit h1{
-    padding: 20px;
-    text-align: center;
-    color: #3586ff;
+
+.rese h1 {
+  text-align: center;
+  color: #3586ff;
+  padding: 20px;
 }
 
-
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px 300px;
-    justify-content: center;
-    padding: 15px;
-    margin-bottom: 90px;
-
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.item {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 25px;
-box-shadow: 0 4px 8px rgba(0, 0,0, 0.5);
-    width: 100%;
-    max-width: 450px;
-    height: 410px;
-    overflow: auto;
-    aspect-ratio: 879/880;
-    transition: all 0.5s;
-}
-.item:hover{
-  background-color: rgba(0, 0,0, 0.5);
-}
-.contenedor .item .itema p:first-child{
-    color: #3586ff;
-    text-align: center;
-    border-bottom: 1px solid #d3d0d0;
-    font-weight: bold;
-    font-size: 1.4rem;
+label {
+  display: block;
+  margin-top: 10px;
+  color: #3586ff;
 }
 
-.itema img{
-    width: 20%;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-}
-.itema p{
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  border-radius: 4px;
+  background-color: #333;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  outline: none;
   color: #fff;
+  font-family: "PT Serif", serif;
 }
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3586ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#successMessage {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
 footer {
   position: relative;
   width: 100%;
   background: #3586ff;
   min-height: 100px;
-
   padding: 20px 50px;
   display: flex;
   justify-content: center;
@@ -179,10 +193,10 @@ footer p {
 }
 footer .wave {
   position: absolute;
-  top: -99px;
+  top: -100px;
   left: 0;
   width: 100%;
-  height: 99px;
+  height: 100px;
   background: url(wave.png);
   background-size: 1000px 100px;
 }
@@ -205,9 +219,9 @@ footer .wave#wave3 {
   animation: animateWave 4s linear infinite;
 }
 footer .wave#wave4 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 1px;
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
   animation: animateWave 4s linear infinite;
 }
 @keyframes animateWave {
@@ -224,37 +238,5 @@ footer .wave#wave4 {
   }
   100% {
     background-position-x: 1000px;
-  }
-}
-@media screen and (max-width: 767px) {
-  body {
-    width: 100%;
-  }
-  .input {
-    width: 100%;
-  }
-  .conm textarea {
-    width: 100%;
-  }
-  .map {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 990px) {
-  body {
-    width: 100%;
-  }
-  .input {
-    width: 100%;
-  }
-  .conm textarea {
-    width: 100%;
-  }
-  header {
-    width: 100%;
-  }
-  .map{
-    width: 100%;
   }
 }
