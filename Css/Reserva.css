@@ -10,60 +10,80 @@ html {
   height: auto;
   font-family: "PT Serif", serif;
 }
-header {
+header{
   background-color: #3586ff;
   display: flex;
-  flex-wrap: wrap;
-  gap: 25px 15px;
-  justify-content: center;
+flex-wrap: wrap;
+gap: 25px 15px;
+justify-content: center;
   top: 0;
   z-index: 1;
   width: 100%;
-  height: auto;
+ height: 120px;;
   padding: 10px;
   margin: 0;
+  position: sticky;
+  top: 0;
+
+  
 }
-.lor {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding: 0%;
-  margin: 20px;
-  color: #fff;
+.mov{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+}
+.lor{
+display: flex;
+justify-content: left;
+align-items: center;
+padding: 0%;
+margin: 20px;
+color: #fff;
 }
 header img {
+  
   width: 29%;
 }
-nav {
-  display: flex;
+nav{
+  display: flex; 
   flex-direction: row;
   align-items: center;
   margin: 0%;
   padding: 0%;
 }
-nav a {
+nav a{
   margin: 10px;
   padding: 10px;
   font-size: 17px;
   text-decoration: none;
 }
-nav .noso {
-  color: #333;
+nav .noso{
+  color: #2a3b47;
 }
-nav .noso:hover {
-  color: #fff;
+nav .noso:hover{
+color: #fff;
 }
-nav .info {
+nav .info{
   color: #fff;
   /* border: 1px solid white; */
-  border-radius: 30px;
+  border-radius:30px ;
 }
-nav .info:hover {
-  color: #2a3b47;
+nav .info:hover{
+color: #2a3b47;
 }
 
 body {
   background-color: #333;
+}
+.rerva{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+flex-wrap: wrap;
+}
+.busq{
+  margin-bottom: 200px;
 }
 
 .rese h1 {
@@ -72,6 +92,10 @@ body {
   padding: 20px;
 }
 
+.rese h2{
+  color: #3586ff;
+  padding: 10px;
+}
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -240,3 +264,80 @@ footer .wave#wave4 {
     background-position-x: 1000px;
   }
 }
+@media screen and (max-width: 767px) {
+  header{
+  background:linear-gradient(#3586ff 0%,#3977d4 35%,#444 100%);
+  border: 1px solid #3586ff;
+  
+  height: 100px;
+  }
+  .mov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lor{
+    display: flex;
+    width: 50%;
+    height: auto;
+   
+    margin: 0%;
+  
+    
+  }
+  .lor h1{
+    font-size: medium;
+  }
+  nav{
+   width:  50%;
+   display: block;
+  
+  }
+  .nave{
+    width: 50%;
+  }
+  
+  
+    body {
+      width: 100%;
+    }
+    .input {
+      width: 100%;
+    }
+    .conm textarea {
+      width: 100%;
+    }
+  .slider-frame  {
+    height: 100%;
+    margin: 0%;
+  padding: 0%;
+  }
+  .slider-frame img {
+    height: 100%;
+   padding: 0%;
+  }
+  }
+  
+  @media (min-width: 768px) and (max-width: 990px) {
+    body {
+      width: 100%;
+    }
+    .input {
+      width: 100%;
+    }
+    .conm textarea {
+      width: 100%;
+    }
+    header {
+      width: 100%;
+    }
+    .slider-frame  {
+      height: 100%;
+      margin: 0%;
+    padding: 0%;
+    }
+    .slider-frame img {
+      height: 100%;
+      padding: 5px;
+    }
+  }

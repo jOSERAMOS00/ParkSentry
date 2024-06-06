@@ -21,11 +21,19 @@ header{
     top: 0;
     z-index: 1;
     width: 100%;
-   height: auto;
+   height: 120px;;
     padding: 10px;
     margin: 0;
+    position: sticky;
+    top: 0;
 
     
+}
+.mov{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 .lor{
   display: flex;
@@ -56,7 +64,7 @@ nav .noso{
     color: #2a3b47;
 }
 nav .noso:hover{
-  color: #2a3b47;
+  color: #fff;
 }
 nav .info{
     color: #fff;
@@ -67,26 +75,50 @@ nav .info:hover{
   color: #2a3b47;
 }
  body{
-
-  background-color: #333;
+  background-color:#444;
+  
 } 
+.slider-frame {
+  padding: 10px;
+	width: 100%;
+    height: 500px;
+	
+	overflow: hidden;
+}
 
-.baner{
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
 
-width: 100%;
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
 
+.slider-frame img {
+	width: 100%;
+  height:50% ;
+  padding: 5px;
 }
-.baner img{
-    width: 100%;
-    height: 150px;
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
-.autos{
-    width: 100%;
-}
-.autos img{
-    width: 100%;
-    height: 200px;
-}
+
 main h1{
   display: flex;
   justify-content: center;
@@ -206,6 +238,7 @@ footer p {
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 1.1em;
+  font-family: "PT Serif", serif;
 
 }
 footer .wave{
@@ -262,7 +295,41 @@ footer .wave#wave4{
   }
 }
 
+
 @media screen and (max-width: 767px) {
+header{
+background:linear-gradient(#3586ff 0%,#3977d4 35%,#444 100%);
+border: 1px solid #3586ff;
+
+height: 100px;
+}
+.mov{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lor{
+  display: flex;
+  width: 50%;
+  height: auto;
+ 
+  margin: 0%;
+
+  
+}
+.lor h1{
+  font-size: medium;
+}
+nav{
+ width:  50%;
+ display: block;
+
+}
+.nave{
+  width: 50%;
+}
+
+
   body {
     width: 100%;
   }
@@ -272,6 +339,15 @@ footer .wave#wave4{
   .conm textarea {
     width: 100%;
   }
+.slider-frame  {
+  height: 100%;
+  margin: 0%;
+padding: 0%;
+}
+.slider-frame img {
+  height: 100%;
+ padding: 0%;
+}
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -286,6 +362,15 @@ footer .wave#wave4{
   }
   header {
     width: 100%;
+  }
+  .slider-frame  {
+    height: 100%;
+    margin: 0%;
+  padding: 0%;
+  }
+  .slider-frame img {
+    height: 100%;
+    padding: 5px;
   }
 }
 
