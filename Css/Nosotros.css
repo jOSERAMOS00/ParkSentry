@@ -268,8 +268,8 @@ footer .wave#wave4 {
 }
 @media screen and (max-width: 767px) {
   header {
-    background: linear-gradient(#3586ff 0%, #3977d4 35%, #444 100%);
     border: 1px solid #3586ff;
+    background: linear-gradient(#3586ff 0%, #3977d4 35%,rgb(58, 119, 206));
 
     height: 100px;
   }
@@ -284,6 +284,19 @@ footer .wave#wave4 {
     height: auto;
 
     margin: 0%;
+  }
+  nav .noso{
+    margin: 0;
+    padding: 0%;
+    margin-bottom: 5px;
+  }
+  
+  nav .info{
+    margin: 0;
+    padding: 0%;
+    margin-bottom: 5px;
+  
+    
   }
   .lor h1 {
     font-size: medium;

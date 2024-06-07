@@ -62,9 +62,12 @@ nav a{
 }
 nav .noso{
     color: #2a3b47;
+    border-radius: 30px;
 }
 nav .noso:hover{
   color: #fff;
+  background-color: #33333377;
+
 }
 nav .info{
     color: #fff;
@@ -72,7 +75,17 @@ nav .info{
     border-radius:30px ;
 }
 nav .info:hover{
-  color: #2a3b47;
+  
+  background-color: #33333377;
+}
+nav .BASE{
+  color: #fff;
+  border: 1px solid#33333391;
+  border-radius: 40px;
+}
+nav .BASE:hover{
+ 
+  background-color: #33333391;
 }
  body{
   background-color:#444;
@@ -298,8 +311,8 @@ footer .wave#wave4{
 
 @media screen and (max-width: 767px) {
 header{
-background:linear-gradient(#3586ff 0%,#3977d4 35%,#444 100%);
 border: 1px solid #3586ff;
+background: linear-gradient(#3586ff 0%, #3977d4 35%,rgb(58, 119, 206));
 
 height: 100px;
 }
@@ -320,13 +333,44 @@ height: 100px;
 .lor h1{
   font-size: medium;
 }
-nav{
- width:  50%;
- display: block;
 
+nav{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
 }
-.nave{
-  width: 50%;
+nav a{
+  font-size: 17px;
+  text-decoration: none;
+}
+nav .noso{
+  margin: 0;
+  padding: 0%;
+  margin-bottom: 5px;
+}
+
+nav .info{
+  margin: 0;
+  padding: 0%;
+  margin-bottom: 5px;
+
+  
+}
+
+nav .BASE{
+margin: 0;
+padding: 0%;
+font-size: medium;
+}
+header{
+  height: 150px;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
